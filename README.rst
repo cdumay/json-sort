@@ -11,7 +11,7 @@ Just a tiny tool to sort keys in a json file
 Quickstart
 ----------
 
-First, install flask-tat using
+First, install json-sort using
 `pip <https://pip.pypa.io/en/stable/>`_::
 
     sh-4.2$ pip install json-sort
