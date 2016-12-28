@@ -48,7 +48,7 @@ def file_write(dst, data):
         out = sys.stdout
 
     json.dump(
-        data, out, ensure_ascii=False, sort_keys=True, indent=4,
+        data, out, ensure_ascii=False, sort_keys=True, indent=2,
         separators=(',', ': ')
     )
 
