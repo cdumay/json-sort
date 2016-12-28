@@ -13,7 +13,7 @@ First, install flask-tat using
 
     sh-4.2$ pip install json-sort
 
-Next, use `json-sort-fromfile` or `json-sort-fromremote`::
+Next, use :code:`json-sort-fromfile` or :code:`json-sort-fromremote`::
 
     sh-4.2$ json-sort-fromremote http://headers.jsontest.com/
     {
@@ -28,7 +28,7 @@ Next, use `json-sort-fromfile` or `json-sort-fromremote`::
 Arguments
 ---------
 
-To see binaries usage, just set `-h`::
+To see binaries usage, just set :code:`-h`::
 
     usage: json-sort-fromfile [-h] [--output FILE] [--verbose] file
 
