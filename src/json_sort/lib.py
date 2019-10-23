@@ -7,9 +7,13 @@
 
 """
 import logging
-import sys, os, json
+import sys
+import os
+import json
+
+from cdumay_error import NotFound
 from cdumay_rest_client.client import RESTClient
-from cdumay_rest_client.exceptions import NotFound, HTTPException
+from werkzeug.exceptions import HTTPException
 
 
 class NoSuchFile(NotFound):
