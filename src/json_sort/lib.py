@@ -11,7 +11,7 @@ import sys
 import os
 import json
 
-from cdumay_error import NotFound
+from cdumay_error.types import NotFound
 from cdumay_rest_client.client import RESTClient
 from werkzeug.exceptions import HTTPException
 
