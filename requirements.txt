@@ -1,4 +1,4 @@
-cdumay-error==0.1.15
+cdumay-error==0.2.0
 cdumay-http-client==0.0.15
 cdumay-rest-client==0.2.6
 certifi==2021.10.8
