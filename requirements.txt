@@ -1,7 +1,7 @@
 cdumay-error==0.2.1
 cdumay-http-client==0.0.15
 cdumay-rest-client==0.2.6
-certifi==2021.10.8
+certifi==2024.7.4
 cffi==1.13.2
 charset-normalizer==2.0.10
 cryptography==2.8
