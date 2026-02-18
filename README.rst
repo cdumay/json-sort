@@ -8,10 +8,9 @@ Just a tiny tool to sort keys in a json file
 Quickstart
 ----------
 
-First, install json-sort using
-`pip <https://pip.pypa.io/en/stable/>`_::
+First, install json-sort using `Poetry <https://python-poetry.org/>`_::
 
-    sh-4.2$ pip install json-sort
+    $ poetry install
 
 Next, use :code:`json-sort-fromfile` or :code:`json-sort-fromremote`::
 
@@ -53,10 +52,10 @@ Testing
 
 Install dev dependencies and run tests (coverage ≥ 90%)::
 
-    pip install -r requirements-dev.txt
-    PYTHONPATH=src pytest tests/ -v
-    PYTHONPATH=src python -m coverage run --source=src/json_sort -m pytest tests/ -q
-    PYTHONPATH=src python -m coverage report --fail-under=90
+    poetry install
+    poetry run pytest tests/ -v
+    poetry run python -m coverage run --source=src/json_sort -m pytest tests/ -q
+    poetry run python -m coverage report --fail-under=90
 
 -------
 License

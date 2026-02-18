@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "json-sort"
+version = "0.1.2"
+description = "Just a tiny tool to sort keys in a json file"
+readme = "README.rst"
+license = "Apache-2.0"
+authors = ["Cedric DUMAY <cedric.dumay@gmail.com>"]
+repository = "https://github.com/cdumay/json-sort"
+packages = [{ include = "json_sort", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cdumay-error = "0.2.1"
+cdumay-http-client = "0.0.15"
+cdumay-rest-client = "0.2.6"
+certifi = ">=2021.10.8"
+cffi = ">=1.13.2"
+charset-normalizer = ">=2.0.10"
+cryptography = ">=2.8"
+idna = ">=2.8"
+marshmallow = ">=3.26.1"
+ndg-httpsclient = ">=0.5.1"
+pyasn1 = ">=0.4.8"
+pycparser = ">=2.19"
+PyOpenSSL = ">=19.1.0"
+requests = ">=2.27.1"
+six = ">=1.14.0"
+urllib3 = ">=1.24.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.0.0"
+pytest-cov = ">=4.0.0"
+
+[tool.poetry.scripts]
+json-sort-fromfile = "json_sort.scripts:fromlocal"
+json-sort-fromremote = "json_sort.scripts:fromurl"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/cdumay/json-sort/issues"
