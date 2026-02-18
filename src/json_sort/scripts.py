@@ -1,20 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""
+"""CLI entry points for JSON sort (local file and URL).
+
 .. codeauthor:: Cédric Dumay <cedric.dumay@gmail.com>
-
-
 """
 import logging
 import argparse
+
 from .lib import from_local, from_remote
 
 
 class CommonParser(argparse.ArgumentParser):
-    """CommonParser"""
+    """Argument parser with common options: output file and verbosity."""
 
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs) -> None:
         argparse.ArgumentParser.__init__(self, **kwargs)
         self.add_argument(
             "--output", "-o", metavar="FILE",
@@ -25,8 +25,8 @@ class CommonParser(argparse.ArgumentParser):
         )
 
 
-def fromlocal():
-    """description of fromlocal"""
+def fromlocal() -> None:
+    """Parse CLI, then load JSON from a local file and output sorted."""
     parser = CommonParser()
     parser.add_argument("file", help="input file")
     args = parser.parse_args()
@@ -37,8 +37,8 @@ def fromlocal():
     from_local(src=args.file, dst=args.output)
 
 
-def fromurl():
-    """description of fromurl"""
+def fromurl() -> None:
+    """Parse CLI, then fetch JSON from a URL and output sorted."""
     parser = CommonParser()
     parser.add_argument("url", help="url to fetch")
     args = parser.parse_args()

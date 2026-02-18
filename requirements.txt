@@ -1,4 +1,4 @@
-cdumay-error==0.2.0
+cdumay-error==0.2.1
 cdumay-http-client==0.0.15
 cdumay-rest-client==0.2.6
 certifi==2021.10.8
@@ -6,7 +6,7 @@ cffi==1.13.2
 charset-normalizer==2.0.10
 cryptography==2.8
 idna==2.8
-marshmallow==3.3.0
+marshmallow==3.26.1
 ndg-httpsclient==0.5.1
 pyasn1==0.4.8
 pycparser==2.19
