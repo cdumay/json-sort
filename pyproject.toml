@@ -3,7 +3,7 @@ name = "json-sort"
 version = "0.1.2"
 description = "Just a tiny tool to sort keys in a json file"
 readme = "README.rst"
-license = "Apache-2.0"
+license = "BSD-3-Clause"
 authors = ["Cedric DUMAY <cedric.dumay@gmail.com>"]
 repository = "https://github.com/cdumay/json-sort"
 packages = [{ include = "json_sort", from = "src" }]
