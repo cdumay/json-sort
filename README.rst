@@ -50,6 +50,17 @@ Example::
     DEBUG   : Checking file: /tmp/test.json
     DEBUG   : Saving to: /tmp/json-sort/test2.json
 
+--------
+Testing
+--------
+
+Install dev dependencies and run tests (coverage ≥ 90%)::
+
+    pip install -r requirements-dev.txt
+    PYTHONPATH=src pytest tests/ -v
+    PYTHONPATH=src python -m coverage run --source=src/json_sort -m pytest tests/ -q
+    PYTHONPATH=src python -m coverage report --fail-under=90
+
 -------
 License
 -------
