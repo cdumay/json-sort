@@ -1,6 +1,3 @@
-.. image:: https://travis-ci.org/cdumay/json-sort.svg?branch=master
-    :target: https://travis-ci.org/cdumay/json-sort
-
 *********
 json-sort
 *********
