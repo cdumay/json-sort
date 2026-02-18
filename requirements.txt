@@ -4,7 +4,7 @@ cdumay-rest-client==0.2.6
 certifi==2021.10.8
 cffi==1.13.2
 charset-normalizer==2.0.10
-cryptography==2.8
+cryptography==46.0.5
 idna==2.8
 marshmallow==3.26.1
 ndg-httpsclient==0.5.1
